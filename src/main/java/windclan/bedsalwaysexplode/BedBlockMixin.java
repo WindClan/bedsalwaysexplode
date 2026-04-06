@@ -1,16 +1,16 @@
 package windclan.bedsalwaysexplode;
 
-import net.minecraft.world.level.Level;
+import net.minecraft.world.attribute.BedRule;
 import net.minecraft.world.level.block.BedBlock;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
-import org.spongepowered.asm.mixin.injection.Inject;
-import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
+import org.spongepowered.asm.mixin.injection.Redirect;
 
 @Mixin(BedBlock.class)
 public class BedBlockMixin {
-    @Inject(method = "canSetSpawn", at=@At("HEAD"),cancellable = true)
-    private static void canSetSpawn(Level lvl, CallbackInfoReturnable<Boolean> cir) {
-        cir.setReturnValue(false);
+    @Redirect(method = "useWithoutItem",
+            at = @At(value = "INVOKE", target = "Lnet/minecraft/world/attribute/BedRule;explodes()Z"))
+    public boolean explodes(BedRule instance) {
+        return true;
     }
 }

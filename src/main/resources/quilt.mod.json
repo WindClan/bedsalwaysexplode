@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "quilt_loader": {
+    "group": "windclan",
+    "id": "bedsalwaysexplode",
+    "version": "${version}",
+    "metadata": {
+      "name": "Beds Always Explode",
+      "description": "Makes beds always explode",
+      "contributors": {
+        "WindClan / average warrior cats fan": "Owner"
+      },
+      "contact": {
+        "issues": "https://github.com/WindClan/bedsalwaysexplode/issues",
+        "sources": "https://github.com/WindClan/bedsalwaysexplode"
+      },
+      "icon": "assets/bedsalwaysexplode/icon.png"
+    },
+    "intermediate_mappings": "net.fabricmc:intermediary",
+    "depends": [
+      {
+        "id": "minecraft",
+        "versions": "${minecraft_version}"
+      }
+    ]
+  },
+  "mixin": "bedsalwaysexplode.mixins.json"
+}

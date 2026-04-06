@@ -16,6 +16,6 @@
     "bedsalwaysexplode.mixins.json"
   ],
   "depends": {
-    "minecraft": "${minecraft_ver}"
+    "minecraft": "${minecraft_version}"
   }
 }
