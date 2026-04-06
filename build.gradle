@@ -44,11 +44,6 @@ processResources {
         expand "version": project.version,
                 "minecraft_ver": project.minecraft_ver
     }
-
-    filesMatching("quilt.mod.json") {
-        expand "version": project.version,
-                "minecraft_ver": project.minecraft_ver
-    }
 }
 
 def targetJavaVersion = 8
