@@ -42,8 +42,12 @@ processResources {
 
     filesMatching("fabric.mod.json") {
         expand "version": project.version,
-                "minecraft_ver": project.minecraft_ver,
-                "loader_version": project.loader_version
+                "minecraft_ver": project.minecraft_ver
+    }
+
+    filesMatching("quilt.mod.json") {
+        expand "version": project.version,
+                "minecraft_ver": project.minecraft_ver
     }
 }
 
