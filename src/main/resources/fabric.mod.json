@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "id": "bedsalwaysexplode",
+  "version": "${version}",
+  "name": "Beds Always Explode",
+  "description": "Makes beds always explode",
+  "authors": ["WindClan / average warrior cats fan"],
+  "icon": "assets/bedsalwaysexplode/icon.png",
+  "contact": {
+    "issues": "https://github.com/WindClan/bedsalwaysexplode/issues",
+    "sources": "https://github.com/WindClan/bedsalwaysexplode"
+  },
+  "license": "MPL-2.0",
+  "environment": "*",
+  "mixins": [
+    "bedsalwaysexplode.mixins.json"
+  ],
+  "depends": {
+    "minecraft": ">=1.14 <=1.15.2"
+  }
+}
