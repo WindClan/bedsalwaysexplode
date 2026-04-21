@@ -8,7 +8,7 @@
   "icon": "assets/bedsalwaysexplode/icon.png",
   "contact": {
     "issues": "https://github.com/WindClan/bedsalwaysexplode/issues",
-    "sources": "https://github.com/WindClan/bedsalwaysexplode"
+    "sources": "https://github.com/WindClan/bedsalwaysexplode/tree/fabric-pre-1.16"
   },
   "license": "MPL-2.0",
   "environment": "*",
