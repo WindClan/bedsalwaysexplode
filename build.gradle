@@ -10,13 +10,6 @@ base {
     archivesName = project.archives_base_name
 }
 
-
-fabricApi {
-    configureDataGeneration {
-        client = true
-    }
-}
-
 repositories {
     // Add repositories to retrieve artifacts from in here.
     // You should only use this when depending on other mods because
@@ -46,6 +39,10 @@ processResources {
                 "minecraft_version": project.minecraft_version
     }
     filesMatching("META-INF/neoforge.mods.toml") {
+        expand "version": project.version,
+                "minecraft_version": project.minecraft_version
+    }
+    filesMatching("META-INF/sponge_plugins.json") {
         expand "version": project.version,
                 "minecraft_version": project.minecraft_version
     }
@@ -79,8 +76,11 @@ java {
 }
 
 jar {
-    from("LICENSE") {
+    from("LICENSE.txt") {
         rename { "${it}_${project.archives_base_name}" }
+    }
+    manifest {
+        attributes('MixinConfigs': 'bedsalwaysexplode.mixins.json',)
     }
 }
 
@@ -101,3 +101,4 @@ publishing {
         // retrieving dependencies.
     }
 }
+

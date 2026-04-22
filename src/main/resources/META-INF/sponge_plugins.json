@@ -1,0 +1,29 @@
+{
+  "loader": {
+    "name": "java_plain",
+    "version": "1.0"
+  },
+  "license": "MPL-2.0",
+  "global": {
+    "version": "${version}",
+    "links": {
+      "source": "https://github.com/WindClan/bedsalwaysexplode",
+      "issues": "https://github.com/WindClan/bedsalwaysexplode/issues"
+    },
+    "contributors": [
+      {
+        "name": "WindClan / average warrior cats fan",
+        "description": "Creator"
+      }
+    ],
+    "dependencies": []
+  },
+  "plugins": [
+    {
+      "id": "bedsalwaysexplode",
+      "name": "Beds Always Explode",
+      "entrypoint": "windclan.BedsAlwaysExplode",
+      "description": "Makes beds always explode"
+    }
+  ]
+}
