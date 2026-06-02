@@ -1,0 +1,21 @@
+{
+	"modListVersion": 2,
+	"modList": [{
+		"modid": "${modId}",
+		"name": "${modName}",
+		"description": "Makes beds always explode",
+		"version": "${modVersion}",
+		"mcversion": "${minecraftVersion}",
+		"url": "https://github.com/WindClan/bedsalwaysexplode/tree/gtnh",
+		"updateUrl": "",
+		"authorList": ["WindClan"],
+		"credits": "",
+		"logoFile": "bedsalwaysexplode.png",
+		"screenshots": [],
+		"parent": "",
+		"requiredMods": [],
+		"dependencies": [],
+		"dependants": [],
+		"useDependencyInformation": false
+	}]
+}
