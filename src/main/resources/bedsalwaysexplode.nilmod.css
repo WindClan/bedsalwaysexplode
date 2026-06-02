@@ -1,0 +1,13 @@
+@nilmod {
+	/* There is no id field. The filename defines the id of the mod. */
+	name: "Beds Always Explode";
+	description: "Makes beds always explode";
+	authors: "WindClan";
+	version: "${version}";
+}
+
+entrypoints {
+	/* premain is the only entrypoint defined by NilLoader itself. */
+	premain: "windclan.bedsalwaysexplode.main";
+	hijack: "windclan.bedsalwaysexplode.main";
+}
